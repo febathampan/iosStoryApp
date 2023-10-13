@@ -127,13 +127,12 @@ The moral of the story is that if we feel something unpleasant, we should take a
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color-2326315_1920" translatesAutoresizingMaskIntoConstraints="NO" id="XkY-d8-VzW">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Te-Ig-qEq">
-                                <rect key="frame" x="148" y="355" width="96" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Te-Ig-qEq">
+                                <rect key="frame" x="139" y="412" width="115.33333333333331" height="28"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="L2Story 1">
+                                        <fragment content="The Wood Cutter">
                                             <attributes>
                                                 <font key="NSFont" size="12" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -151,8 +150,10 @@ The moral of the story is that if we feel something unpleasant, we should take a
                         <viewLayoutGuide key="safeArea" id="3TL-sy-Ksz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4Te-Ig-qEq" firstAttribute="centerX" secondItem="nC8-pz-4bN" secondAttribute="centerX" id="1JZ-bF-g0F"/>
                             <constraint firstItem="XkY-d8-VzW" firstAttribute="leading" secondItem="3TL-sy-Ksz" secondAttribute="leading" id="AEZ-J8-dvu"/>
                             <constraint firstItem="XkY-d8-VzW" firstAttribute="top" secondItem="nC8-pz-4bN" secondAttribute="top" id="dKn-Fw-Kwy"/>
+                            <constraint firstItem="4Te-Ig-qEq" firstAttribute="centerY" secondItem="nC8-pz-4bN" secondAttribute="centerY" id="iXy-gx-vvH"/>
                             <constraint firstAttribute="bottom" secondItem="XkY-d8-VzW" secondAttribute="bottom" id="oKX-1j-tzD"/>
                             <constraint firstAttribute="trailing" secondItem="XkY-d8-VzW" secondAttribute="trailing" id="ync-ir-n6k"/>
                         </constraints>
@@ -344,20 +345,14 @@ In the morning, there was an uproar in the entire Rajgarh that Lord Ganesha was 
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-4119971_1920" translatesAutoresizingMaskIntoConstraints="NO" id="att-76-ei6">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3H-fg-QSS">
-                                <rect key="frame" x="161" y="569" width="117" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="L1S1Pg2End"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAQ-3X-eAE">
-                                <rect key="frame" x="16" y="259" width="339" height="211"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yfA-9L-crl">
+                                <rect key="frame" x="56" y="194" width="295" height="409"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">A crowd of people gathered to see him at the blacksmith’s house. People worshipped him and gave him the status of God.
 
 Now, the king was regretting his actions.
 
-The story teaches us that we should never disregard what God gives us.</string>
+The story teaches us that we should never disregard what God gives us.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -390,10 +385,10 @@ The story teaches us that we should never disregard what God gives us.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hea-w5-1Gp">
-                                <rect key="frame" x="156" y="445" width="79" height="35"/>
+                                <rect key="frame" x="126" y="445" width="137" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Story 2">
+                                <buttonConfiguration key="configuration" style="filled" title="The Dog">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.078047673319999997" green="0.30412371129999999" blue="0.1345666828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
@@ -402,10 +397,10 @@ The story teaches us that we should never disregard what God gives us.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpj-k5-xWq">
-                                <rect key="frame" x="156" y="207" width="77" height="35"/>
+                                <rect key="frame" x="126" y="207" width="137" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Story 1">
+                                <buttonConfiguration key="configuration" style="filled" title="The Cruel King">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.078047673319999997" green="0.30412371129999999" blue="0.1345666828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
@@ -427,7 +422,7 @@ The story teaches us that we should never disregard what God gives us.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDk-BM-Jja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="-152"/>
+            <point key="canvasLocation" x="1100" y="-152.11267605633805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hqx-d7-Vsy">
@@ -440,14 +435,8 @@ The story teaches us that we should never disregard what God gives us.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple-1741713" translatesAutoresizingMaskIntoConstraints="NO" id="HPL-La-QtF">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM9-eW-voD">
-                                <rect key="frame" x="194" y="409" width="90" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="L1S2End"/>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd3-7V-MCf">
-                                <rect key="frame" x="47" y="152" width="312" height="493"/>
+                                <rect key="frame" x="47" y="197" width="312" height="493"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">There was a stray dog in a village. That dog used to sit outside a school in the village.
 
