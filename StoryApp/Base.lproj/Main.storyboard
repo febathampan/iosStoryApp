@@ -22,6 +22,10 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="L2StoryEnd"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjW-XY-uGS">
+                                <rect key="frame" x="140" y="136" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c9I-IH-fV2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,11 +105,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color-2326315_1920" translatesAutoresizingMaskIntoConstraints="NO" id="XkY-d8-VzW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Te-Ig-qEq">
-                                <rect key="frame" x="175" y="228" width="96" height="35"/>
+                                <rect key="frame" x="148" y="245" width="96" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="L2Story 1"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="L2Story 1">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.2470588235" green="0.047058823530000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="iJ3-sW-WR8" kind="show" id="Nqa-pF-xxC"/>
                                 </connections>
@@ -113,12 +131,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3TL-sy-Ksz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XkY-d8-VzW" firstAttribute="leading" secondItem="3TL-sy-Ksz" secondAttribute="leading" id="AEZ-J8-dvu"/>
+                            <constraint firstItem="XkY-d8-VzW" firstAttribute="top" secondItem="nC8-pz-4bN" secondAttribute="top" id="dKn-Fw-Kwy"/>
+                            <constraint firstAttribute="bottom" secondItem="XkY-d8-VzW" secondAttribute="bottom" id="oKX-1j-tzD"/>
+                            <constraint firstAttribute="trailing" secondItem="XkY-d8-VzW" secondAttribute="trailing" id="ync-ir-n6k"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0g0-Us-2Df"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXD-G2-5rk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="570"/>
+            <point key="canvasLocation" x="1139.6946564885495" y="569.71830985915494"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Iws-LE-ht1">
@@ -137,6 +161,10 @@
                                     <segue destination="XsP-qB-c8O" kind="show" id="Y7o-vk-pin"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-bT-gmM">
+                                <rect key="frame" x="35" y="96" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PZH-KZ-1iP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -171,26 +199,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-Tv-N3M">
-                                <rect key="frame" x="175" y="281" width="29" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball-7280265_1920" translatesAutoresizingMaskIntoConstraints="NO" id="tYG-Ar-iLw">
-                                <rect key="frame" x="98" y="324" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball-7280265_1920" translatesAutoresizingMaskIntoConstraints="NO" id="tYG-Ar-iLw">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-Tv-N3M">
+                                <rect key="frame" x="159" y="116" width="80" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemMintColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="7" height="12"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4l-Xg-GY5">
+                                <rect key="frame" x="76" y="196" width="240" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This app has many stories in it. Stories are mainly at 2 levels. Level 1 has stories from children of age 10 and below.Level 2 has stories from children of age between 10 and 16.Enjoy your app!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="opq-ng-jdy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tYG-Ar-iLw" firstAttribute="leading" secondItem="opq-ng-jdy" secondAttribute="leading" id="LGv-8L-GP3"/>
+                            <constraint firstItem="opq-ng-jdy" firstAttribute="trailing" secondItem="tYG-Ar-iLw" secondAttribute="trailing" id="Shr-Sa-o9i"/>
+                            <constraint firstAttribute="bottom" secondItem="tYG-Ar-iLw" secondAttribute="bottom" id="jEB-4X-eb6"/>
+                            <constraint firstItem="tYG-Ar-iLw" firstAttribute="top" secondItem="o04-HZ-Q1F" secondAttribute="top" id="sJd-O7-lVT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SzK-Mk-u6b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AcK-kq-hbX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="277" y="844"/>
+            <point key="canvasLocation" x="275.57251908396944" y="843.66197183098598"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8KM-K3-61y">
@@ -200,11 +243,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-4119971_1920" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-E0-JrD">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CS-UI-aOX">
-                                <rect key="frame" x="122" y="278" width="104" height="35"/>
+                                <rect key="frame" x="274" y="721" width="60" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="L1S1Page1"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.095244618279999999" green="0.3711340206" blue="0.16421696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="R32-QG-PXr" kind="show" id="Jat-Nw-pGc"/>
                                 </connections>
@@ -212,6 +261,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vtz-gP-HWZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EFh-E0-JrD" firstAttribute="top" secondItem="fx1-tQ-zdv" secondAttribute="top" id="9Qh-7A-ktX"/>
+                            <constraint firstItem="EFh-E0-JrD" firstAttribute="leading" secondItem="vtz-gP-HWZ" secondAttribute="leading" id="f6Y-TU-O6o"/>
+                            <constraint firstItem="vtz-gP-HWZ" firstAttribute="trailing" secondItem="EFh-E0-JrD" secondAttribute="trailing" id="hoM-m0-D3d"/>
+                            <constraint firstAttribute="bottom" secondItem="EFh-E0-JrD" secondAttribute="bottom" id="qyq-Jt-zKx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xxf-qZ-UGQ"/>
                 </viewController>
@@ -227,12 +282,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="att-76-ei6">
+                                <rect key="frame" x="96" y="321" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3H-fg-QSS">
-                                <rect key="frame" x="161" y="356" width="117" height="35"/>
+                                <rect key="frame" x="161" y="569" width="117" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="L1S1Pg2End"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RAQ-3X-eAE">
+                                <rect key="frame" x="16" y="103" width="240" height="610"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">The Loyal DogThere was a stray dog in a village. That dog used to sit outside a school in the village.A boy  used to feed both the pieces of bread of his tiffin to that dog. One day some boys in his class started beating him outside the school.As soon as the dog saw the incident, he ran fast. Seeing the dog coming near them, all the boys ran away.The boy hugged the dog and thanked him.The story teaches us that true friendship is very pleasant and always supportive.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tfm-OL-5kL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -241,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mxp-78-Rup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2990" y="-975"/>
+            <point key="canvasLocation" x="2988.5496183206105" y="-975.35211267605644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ryp-XD-kgc">
@@ -251,11 +319,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-7424380_1920" translatesAutoresizingMaskIntoConstraints="NO" id="f0z-8f-7rs">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hea-w5-1Gp">
                                 <rect key="frame" x="156" y="445" width="79" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Story 2"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Story 2">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.078047673319999997" green="0.30412371129999999" blue="0.1345666828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="YKK-Dq-1h7" kind="show" id="tTf-HU-rNI"/>
                                 </connections>
@@ -264,7 +338,10 @@
                                 <rect key="frame" x="156" y="207" width="77" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Story 1"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Story 1">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.078047673319999997" green="0.30412371129999999" blue="0.1345666828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="oLV-a7-fSH" kind="show" id="RoH-LV-bxR"/>
                                 </connections>
@@ -272,6 +349,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gWd-tR-nGX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f0z-8f-7rs" firstAttribute="top" secondItem="gxh-UJ-KhM" secondAttribute="top" id="Hu1-Ce-inS"/>
+                            <constraint firstItem="f0z-8f-7rs" firstAttribute="leading" secondItem="gWd-tR-nGX" secondAttribute="leading" id="RjA-vj-DGp"/>
+                            <constraint firstItem="gWd-tR-nGX" firstAttribute="trailing" secondItem="f0z-8f-7rs" secondAttribute="trailing" id="T6A-uh-zYd"/>
+                            <constraint firstAttribute="bottom" secondItem="f0z-8f-7rs" secondAttribute="bottom" id="YVs-LA-bDS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l2P-s9-ZhE"/>
                 </viewController>
@@ -287,28 +370,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple-1741713" translatesAutoresizingMaskIntoConstraints="NO" id="HPL-La-QtF">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM9-eW-voD">
                                 <rect key="frame" x="194" y="409" width="90" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="L1S2End"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd3-7V-MCf">
+                                <rect key="frame" x="47" y="152" width="312" height="493"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">There was a stray dog in a village. That dog used to sit outside a school in the village.A boy studying in the fifth standard used to feed both the pieces of bread of his tiffin to that dog.He was doing so for the last five months. One day some boys in his class started beating him outside the school.As soon as the dog saw the incident, he ran fast. Seeing the dog coming near them, all the boys ran away.The boy hugged the dog and thanked him.The story teaches us that true friendship is very pleasant and always supportive.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z0s-Rl-dtP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HPL-La-QtF" firstAttribute="leading" secondItem="z0s-Rl-dtP" secondAttribute="leading" id="Tg8-hU-22x"/>
+                            <constraint firstAttribute="bottom" secondItem="HPL-La-QtF" secondAttribute="bottom" id="ezH-ao-3rg"/>
+                            <constraint firstItem="z0s-Rl-dtP" firstAttribute="trailing" secondItem="HPL-La-QtF" secondAttribute="trailing" id="g9N-LT-uiw"/>
+                            <constraint firstItem="HPL-La-QtF" firstAttribute="top" secondItem="iFf-62-0uz" secondAttribute="top" id="p1W-yw-tKJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fpI-po-Shf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zh2-h0-i1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="-152"/>
+            <point key="canvasLocation" x="1945.8015267175572" y="-152.11267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="background-7424380_1920" width="1920" height="1477"/>
         <image name="ball-7280265_1920" width="1357" height="1920"/>
         <image name="christmas-1911637_1920" width="1920" height="1280"/>
+        <image name="color-2326315_1920" width="1920" height="1920"/>
+        <image name="purple-1741713" width="2880" height="1800"/>
+        <image name="woman-4119971_1920" width="1920" height="1352"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
