@@ -17,18 +17,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0c-42-S5G">
-                                <rect key="frame" x="109" y="291" width="113" height="35"/>
+                                <rect key="frame" x="204" y="648" width="113" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="L2StoryEnd"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tjW-XY-uGS">
-                                <rect key="frame" x="140" y="136" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-2514504_1920" translatesAutoresizingMaskIntoConstraints="NO" id="tjW-XY-uGS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQH-1w-0UI">
+                                <rect key="frame" x="38" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">She felt very sorry for her children.
+
+The moral of the story is that if we feel something unpleasant, we should take action immediately rather than avoid it.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="c9I-IH-fV2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tjW-XY-uGS" firstAttribute="leading" secondItem="c9I-IH-fV2" secondAttribute="leading" id="BSb-ie-8eN"/>
+                            <constraint firstItem="c9I-IH-fV2" firstAttribute="trailing" secondItem="tjW-XY-uGS" secondAttribute="trailing" id="H18-32-Bdm"/>
+                            <constraint firstAttribute="bottom" secondItem="tjW-XY-uGS" secondAttribute="bottom" id="O9N-bb-43g"/>
+                            <constraint firstItem="tjW-XY-uGS" firstAttribute="top" secondItem="NGi-aw-vRP" secondAttribute="top" id="vnK-YQ-7pg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NEU-Wa-zbH"/>
                 </viewController>
@@ -47,8 +62,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="christmas-1911637_1920" translatesAutoresizingMaskIntoConstraints="NO" id="tXM-2m-fnn">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-SB-tOe">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-SB-tOe">
                                 <rect key="frame" x="158.66666666666666" y="236" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Level 1">
                                     <backgroundConfiguration key="background"/>
@@ -59,8 +76,9 @@
                                     <segue destination="W38-37-bP1" kind="show" id="1Ko-QR-Pu9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-YL-Yul">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-YL-Yul">
                                 <rect key="frame" x="157.66666666666666" y="442" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Level 2">
                                     <color key="baseForegroundColor" red="0.1960784314" green="0.08235294118" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,10 +103,8 @@
                         <constraints>
                             <constraint firstItem="tXM-2m-fnn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AWb-vx-cp7"/>
                             <constraint firstAttribute="bottom" secondItem="tXM-2m-fnn" secondAttribute="bottom" id="CSR-MK-cI7"/>
-                            <constraint firstItem="IZG-SB-tOe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TdS-oY-wy7"/>
                             <constraint firstItem="tXM-2m-fnn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="art-cV-Ctb"/>
                             <constraint firstAttribute="trailing" secondItem="tXM-2m-fnn" secondAttribute="trailing" id="fg1-Uq-Ais"/>
-                            <constraint firstItem="ydA-YL-Yul" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pGe-mG-dMA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5lu-L1-onX"/>
@@ -109,7 +125,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Te-Ig-qEq">
-                                <rect key="frame" x="148" y="245" width="96" height="36"/>
+                                <rect key="frame" x="148" y="355" width="96" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -152,28 +168,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-2514504_1920" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-bT-gmM">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdz-hT-bjc">
-                                <rect key="frame" x="143" y="333" width="107" height="35"/>
+                                <rect key="frame" x="273" y="690" width="60" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="L2S1page1"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <color key="baseForegroundColor" red="0.2470588235" green="0.047058823530000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.92156862750000001" green="0.98431372549999996" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="XsP-qB-c8O" kind="show" id="Y7o-vk-pin"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-bT-gmM">
-                                <rect key="frame" x="35" y="96" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-L7-cMM">
+                                <rect key="frame" x="35" y="244" width="295" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <string key="text">A woodcutter was cutting wood in the forest. There was a tree nearby that was very precious, so he asked his friends to cut it down, but they decided to cut it the next day.
+
+Some children of a bird were listening to them on the same tree and narrated the whole story to their mother.
+
+But, the mother said that nothing would happen.
+
+The next morning, the mother flew away in search of food. When she returned, she saw that the tree was cut down and her children were dead.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PZH-KZ-1iP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PZH-KZ-1iP" firstAttribute="trailing" secondItem="mSN-bT-gmM" secondAttribute="trailing" id="KoA-VN-t58"/>
+                            <constraint firstAttribute="bottom" secondItem="mSN-bT-gmM" secondAttribute="bottom" id="Xxr-n6-d1C"/>
+                            <constraint firstItem="mSN-bT-gmM" firstAttribute="leading" secondItem="PZH-KZ-1iP" secondAttribute="leading" id="bph-qJ-y59"/>
+                            <constraint firstItem="mSN-bT-gmM" firstAttribute="top" secondItem="l2b-JQ-wdB" secondAttribute="top" id="qJC-Ow-ziq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mY1-hU-FjE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agd-L9-oWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="577"/>
+            <point key="canvasLocation" x="1936.6412213740457" y="576.76056338028172"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dKl-h2-gQy">
@@ -214,7 +252,10 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4l-Xg-GY5">
                                 <rect key="frame" x="76" y="196" width="240" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This app has many stories in it. Stories are mainly at 2 levels. Level 1 has stories from children of age 10 and below.Level 2 has stories from children of age between 10 and 16.Enjoy your app!</string>
+                                <string key="text">This app has many stories in it. Stories are mainly at 2 levels. 
+Level 1 has stories from children of age 10 and below.
+Level 2 has stories from children of age between 10 and 16.
+Enjoy your app!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -246,8 +287,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-4119971_1920" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-E0-JrD">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4t-ZH-XuI">
+                                <rect key="frame" x="43" y="193" width="307" height="341"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">There was a king in Rajgarh. He was well-known for his cruelty.
+
+One day, his wife gave birth to a child. The child was completely different from the normal child because of the elephant-like appearance.
+
+Seeing that, the king asked the servant to leave that child in the forest.
+
+
+In the morning, there was an uproar in the entire Rajgarh that Lord Ganesha was born in a blacksmith’s house but no one knew that the blacksmith found that child in the forest.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CS-UI-aOX">
-                                <rect key="frame" x="274" y="721" width="60" height="35"/>
+                                <rect key="frame" x="274" y="611" width="60" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next">
@@ -272,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPO-00-6wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2030" y="-975"/>
+            <point key="canvasLocation" x="2029.7709923664122" y="-975.35211267605644"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="DXr-1T-BdW">
@@ -282,9 +338,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="att-76-ei6">
-                                <rect key="frame" x="96" y="321" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman-4119971_1920" translatesAutoresizingMaskIntoConstraints="NO" id="att-76-ei6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3H-fg-QSS">
                                 <rect key="frame" x="161" y="569" width="117" height="35"/>
@@ -292,18 +347,27 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="L1S1Pg2End"/>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RAQ-3X-eAE">
-                                <rect key="frame" x="16" y="103" width="240" height="610"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAQ-3X-eAE">
+                                <rect key="frame" x="16" y="259" width="339" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">The Loyal DogThere was a stray dog in a village. That dog used to sit outside a school in the village.A boy  used to feed both the pieces of bread of his tiffin to that dog. One day some boys in his class started beating him outside the school.As soon as the dog saw the incident, he ran fast. Seeing the dog coming near them, all the boys ran away.The boy hugged the dog and thanked him.The story teaches us that true friendship is very pleasant and always supportive.</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <string key="text">A crowd of people gathered to see him at the blacksmith’s house. People worshipped him and gave him the status of God.
+
+Now, the king was regretting his actions.
+
+The story teaches us that we should never disregard what God gives us.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tfm-OL-5kL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="att-76-ei6" firstAttribute="top" secondItem="hPx-4M-Q1u" secondAttribute="top" id="E5p-tf-6IK"/>
+                            <constraint firstItem="att-76-ei6" firstAttribute="leading" secondItem="tfm-OL-5kL" secondAttribute="leading" id="cL8-Hi-vTM"/>
+                            <constraint firstItem="tfm-OL-5kL" firstAttribute="trailing" secondItem="att-76-ei6" secondAttribute="trailing" id="vvx-ka-siH"/>
+                            <constraint firstAttribute="bottom" secondItem="att-76-ei6" secondAttribute="bottom" id="yl8-oY-S7q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aIR-p9-uZF"/>
                 </viewController>
@@ -382,7 +446,16 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd3-7V-MCf">
                                 <rect key="frame" x="47" y="152" width="312" height="493"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">There was a stray dog in a village. That dog used to sit outside a school in the village.A boy studying in the fifth standard used to feed both the pieces of bread of his tiffin to that dog.He was doing so for the last five months. One day some boys in his class started beating him outside the school.As soon as the dog saw the incident, he ran fast. Seeing the dog coming near them, all the boys ran away.The boy hugged the dog and thanked him.The story teaches us that true friendship is very pleasant and always supportive.</mutableString>
+                                <string key="text">There was a stray dog in a village. That dog used to sit outside a school in the village.
+
+A boy studying in the fifth standard used to feed both the pieces of bread of his tiffin to that dog.
+He was doing so for the last five months. One day some boys in his class started beating him outside the school.
+
+As soon as the dog saw the incident, he ran fast. Seeing the dog coming near them, all the boys ran away.
+
+The boy hugged the dog and thanked him.
+
+The story teaches us that true friendship is very pleasant and always supportive.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -410,10 +483,8 @@
         <image name="christmas-1911637_1920" width="1920" height="1280"/>
         <image name="color-2326315_1920" width="1920" height="1920"/>
         <image name="purple-1741713" width="2880" height="1800"/>
+        <image name="woman-2514504_1920" width="1920" height="1080"/>
         <image name="woman-4119971_1920" width="1920" height="1352"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
