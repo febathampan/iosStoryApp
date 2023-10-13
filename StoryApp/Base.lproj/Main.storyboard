@@ -88,11 +88,14 @@ The moral of the story is that if we feel something unpleasant, we should take a
                                     <segue destination="kgP-Ac-phV" kind="show" id="IzM-j4-Wq2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gub-NM-H2R">
-                                <rect key="frame" x="286" y="734" width="53" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gub-NM-H2R">
+                                <rect key="frame" x="289" y="736" width="50" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="info"/>
+                                <color key="backgroundColor" red="0.69587628869999996" green="0.45979034880000003" blue="0.2927275506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.2470588235" green="0.047058823530000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <color key="baseBackgroundColor" red="0.69587628869999996" green="0.45979034880000003" blue="0.2927275506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="bpC-fI-Y5k" kind="show" id="Tal-CP-Wki"/>
                                 </connections>
